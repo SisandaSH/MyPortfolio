@@ -8,18 +8,13 @@ const links = [
     icon: "devicon-github-original",
   },
   {
-    name: "Telegram",
-    href: "https://t.me/dimar1150",
-    icon: "bx bxl-telegram",
-  },
-  {
     name: "WhatsApp",
-    href: "0633920364",
+    href: "https://wa.me/+27633920364",
     icon: "bx bxl-whatsapp",
   },
   {
     name: "Email",
-    href: "sisandashwala4@gmail.com",
+    href: "mailto:sisandashwala4@gmail.com",
     icon: "bx bx-envelope",
   },
   {
