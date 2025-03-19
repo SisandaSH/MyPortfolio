@@ -4,7 +4,7 @@ import CV from "src/assets/cv/cv.pdf";
 const links = [
   {
     name: "Github",
-    href: "https://github.com/Dimar1510/portfolio",
+    href: "https://github.com/SisandaSH/MyPortfolio",
     icon: "devicon-github-original",
   },
   {
@@ -14,16 +14,16 @@ const links = [
   },
   {
     name: "WhatsApp",
-    href: "https://wa.me/9164811962",
+    href: "0633920364",
     icon: "bx bxl-whatsapp",
   },
   {
     name: "Email",
-    href: "mailto:dimar1150@gmail.com",
+    href: "sisandashwala4@gmail.com",
     icon: "bx bx-envelope",
   },
   {
-    name: "Резюме",
+    name: "Resume",
     href: CV,
     icon: "bx bx-file",
   },
@@ -46,7 +46,7 @@ export default function Footer() {
           })}
         </div>
         <span className="text-center uppercase text-sm text-text-clr transition-colors duration-500">
-          Dmitry Martynov
+          Sisanda Vukile Shwala © 2025
         </span>
       </div>
     </footer>
