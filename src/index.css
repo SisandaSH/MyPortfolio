@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --container-color: #fff;
+    --text-color: hsl(0, 0%, 19%);
+    --body-color: hsl(0, 0%, 100%);
+    --title-color: hsl(0, 0%, 20%);
+    --title-color-dark: #000000;
+    --body-font: "Exo 2", sans-serif;
+    --accent-color: rgb(0, 235, 200);
+    --shadow-color: rgba(0, 0, 0, 0.2);
+  }
+
+  :root[class~="dark"] {
+    --container-color: #000;
+    --text-color: hsl(0, 0%, 91%);
+    --body-color: hsl(0, 0%, 5%);
+    --title-color: hsl(0, 0%, 100%);
+    --title-color-dark: #ffffff;
+    --shadow-color: rgba(255, 255, 255, 0.2);
+  }
+
+  body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+  }
+
+  body::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: var(--body-color);
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 5px;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background: var(--text-color);
+  }
+
+  /* scrollbar styling for firefox */
+  @-moz-document url-prefix() {
+    :root {
+      scrollbar-color: var(--accent-color) var(--body-color);
+    }
+  }
+
+  body,
+  button,
+  input,
+  textarea {
+    font-family: var(--body-font);
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-smooth iframe {
+    pointer-events: none;
+  }
+}
