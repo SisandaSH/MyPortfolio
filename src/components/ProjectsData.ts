@@ -20,19 +20,19 @@ export const items: IProject[] = [
     source: "https://github.com/SisandaSH/Mqingwana-attorneys.git",
     short: "Law Firm",
     tags: [
- 
+      "Project",
     ],
   },
   {
     title: "Restaurant Chooser",
     img: restaurant,
     desc: "An app that helps partners and families to feast on the best meals that all can enjoy",
-    live: "https://restaurant-chooser-webstack-project-ipr85h7ah.vercel.app",
-    source: "https://github.com/SisandaSH/Webstack-Portfolio-Project.git",
+    live: "https://restaurant-chooser-csywjp39u-sisandashs-projects.vercel.app/",
+    source: "https://github.com/SisandaSH/Restaurant-Chooser.git",
     short:
       "Restaurant App",
     tags: [
-      "Projects",
+      
  
     ],
   },

@@ -46,23 +46,37 @@ const About = () => {
         </motion.div>
 
         <motion.div
-          className="flex-1 p-4 flex flex-col gap-8 justify-center"
+          className="flex-1 p-4 flex flex-col gap-8 justify-center  shadow-white shadow-lg"
           custom={3}
           variants={textAnimation}
         >
           <p className="text-lg">
-          Hi! My name is Sisanda Vukile Shwala and I am a web developer who is passionate about creating creative, practical and responsive web applications. I am a fast learner and always looking to expand my knowledge and skills.
-
-My portfolio features a few select apps, and the link below shows (almost) all the projects I've worked on.
-
-My goal is to continue to improve as a developer and take part in the creation of high-quality and effective products.
+          Hi! My name is Sisanda Vukile Shwala and I am a <span className="text-accent-clr">Junior Full Stack Developer</span> who is passionate about creating visually appealing, functional applications. I strive to upskill myself in various technologies.
           </p>
           <p className="text-lg">
-          My portfolio features a few select apps, and the link below shows (almost) all the projects I've worked on.
+          My portfolio features a few select apps that I have worked on.
           </p>
           <p className="text-lg">
           My goal is to continue to improve as a developer and take part in the creation of high-quality and effective products.
           </p>
+          <div className="education flex gap-4">
+            <div className="flex flex-col gap-2">
+              <h3 className="text-xl font-medium text-accent-clr">Education</h3>
+              <div className="flex flex-col gap-2 w-[200px] shadow-accent-clr">
+              <p className="text-lg ">BSc in Mathematics and Computer Science <span className="text-sm">University of South Africa</span></p>
+              </div>
+              <div className="flex flex-col gap-2 w-[200px]">
+              <p className="text-lg">Certificate in Software Engineering</p>
+              <p className="text-sm">ALX</p>
+              </div>
+            </div>
+            <div className="experience flex flex-col gap-2 ml-[120px]">
+              <h3 className="text-xl font-medium text-accent-clr">Experience</h3>
+              <p className="text-lg">Junior Full Stack Developer - Shaper </p>
+              <small className="text-sm">2024-10-01 - 2025-03-31</small>
+              
+              </div>
+          </div>
           <motion.div
             className="flex gap-4"
             custom={4}

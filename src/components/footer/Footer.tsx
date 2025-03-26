@@ -22,6 +22,11 @@ const links = [
     href: CV,
     icon: "bx bx-file",
   },
+  {
+    name: "LinkedIn",
+    href: "linkedin.com/in/sisanda-shwala-4b290625b",
+    icon: "bx bxl-linkedin",
+  },
 ];
 
 export default function Footer() {

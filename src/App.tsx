@@ -10,7 +10,11 @@ import { ReactLenis } from "lenis/dist/lenis-react";
 import { useEffect, useState } from "react";
 import Projects from "./components/projects/Projects";
 
+
+
+
 function App() {
+
   // checking theme
   const [dark, setDark] = useState(
     localStorage.theme === "dark" ||
@@ -51,6 +55,7 @@ function App() {
   }, []);
 
   return (
+    
     <ReactLenis root>
       <div className="bg-body-clr transition-colors duration-500">
         <Header inView={inView} dark={dark} setDark={setDark} />
